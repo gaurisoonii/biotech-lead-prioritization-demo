@@ -38,6 +38,10 @@ if "Work_Mode" not in df.columns:
 # -----------------------------
 # SCORING LOGIC (×5 BUCKETS)
 # -----------------------------
+def round_to_5(x):
+    return int(5 * round(x / 5))
+
+
 def calculate_score(role, domain, has_3d_signal, company_stage, decision_maker):
     score = 0
 
@@ -58,7 +62,6 @@ def calculate_score(role, domain, has_3d_signal, company_stage, decision_maker):
 
     score += {"High": 25, "Medium": 15, "Low": 5}[domain]
     score += {"Strong": 25, "Indirect": 15, "None": 0}[has_3d_signal]
-
     score += {
         "Public": 10,
         "Series C": 10,
@@ -70,8 +73,8 @@ def calculate_score(role, domain, has_3d_signal, company_stage, decision_maker):
     if decision_maker:
         score += 10
 
-    MAX_SCORE = 125
-    return round((score / MAX_SCORE) * 100, 1)
+    # 🔥 THIS LINE FIXES EVERYTHING
+    return min(round_to_5(score), 100)
 
 
 # -----------------------------
