@@ -59,9 +59,12 @@ Streamlit
 
 Project Structure
 internship_gauri/
-├── app.py           # Streamlit dashboard
+├── app.py  # Streamlit dashboard
+
 ├── create_csv.py    # Mock lead data generator
+
 ├── leads.csv        # Sample enriched lead data
+
 └── README.md
 
 How to Run
