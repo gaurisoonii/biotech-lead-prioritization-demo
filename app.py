@@ -37,7 +37,9 @@ def calculate_score(row):
     if any(hub in row["Company_HQ"] for hub in hubs):
         score += 10
 
-    return min(score, 100)
+    MAX_SCORE = 125
+    return round((score / MAX_SCORE) * 100, 1)
+
 
 
 # Calculate & rank
