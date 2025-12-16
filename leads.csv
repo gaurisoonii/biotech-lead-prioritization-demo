@@ -1,0 +1,6 @@
+Name,Title,Company,Person_Location,Company_HQ,Company_Stage,Funded,Published_Liver_Paper,Conference_Attendee,Uses_InVitro_Tech,Email,LinkedIn
+Dr Alice Smith,Director of Toxicology,BioGenX,Boston,Cambridge,Series B,Yes,Yes,Yes,Yes,alice.smith@biogenx.com,https://linkedin.com/in/alice.smith
+Dr Bob Jones,Senior Scientist,HealthStart,Texas,San Diego,Seed,No,No,No,No,bob.jones@healthstart.com,https://linkedin.com/in/bob.jones
+Dr Carol White,Head of Preclinical Safety,LiverTech,Remote CO,Boston,Series A,Yes,Yes,Yes,Yes,carol.white@livertech.com,https://linkedin.com/in/carol.white
+Dr David Brown,Junior Scientist,EarlyBio,New York,New York,Seed,No,No,No,No,david.brown@earlybio.com,https://linkedin.com/in/david.brown
+Dr Emma Green,VP Safety Assessment,OncoNova,Basel,Basel,Public,Yes,Yes,Yes,Yes,emma.green@onconova.com,https://linkedin.com/in/emma.green
